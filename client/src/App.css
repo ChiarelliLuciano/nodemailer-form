@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  color: white;
+  background-color: #7a28ff;
+  margin: 100px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+.container form {
+  width: 100%;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container label {
+  display: block;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3px;
+}
+.container input,
+.container textarea {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+}
+.singleItem {
+  margin: 10px 0;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+}
+.btn button {
+  color: #7a28ff;
+  background-color: lightgray;
+  width: 150px;
+  font-size: 20px;
+  letter-spacing: normal;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  margin-top: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.btn button:hover {
+  border: 3px solid teal;
+  cursor: pointer;
+  color: teal;
+  font-weight: bold;
+}
+.msg {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 350px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: teal;
+  border-radius: 5px;
+  display: none;
+}
+.msgAppear {
+  display: block;
+}
+
+@media screen and (min-width: 664px) {
+  .container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 986px) {
+  .container {
+    width: 40%;
+  }
+}
