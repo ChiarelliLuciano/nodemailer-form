@@ -20,7 +20,8 @@ app.post("/api/forma", (req, res) => {
     port: 465,
     auth: {
       user: "nodemailerlmc@gmail.com",
-      pass: "nodemailer22",
+      //la contraseña del user debe colocarse en pass
+      pass: "",
     },
   });
 
