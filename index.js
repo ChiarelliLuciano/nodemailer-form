@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get("/", () => {
-  resizeBy.send("Bienvenido a mi forma");
+app.get("/", (req, res) => {
+  res.send("Bienvenido a mi forma");
 });
 
 app.post("/api/forma", (req, res) => {
@@ -27,7 +27,7 @@ app.post("/api/forma", (req, res) => {
   let mailOptions = {
     from: data.email,
     to: "nodemailerlmc@gmail.com",
-    subjet: `Mensaje de ${data.name} ${data.lastname}`,
+    subject: `Mensaje de ${data.name} ${data.lastname}`,
     html: `
             <h3>Info</h3>
                 <ul>
